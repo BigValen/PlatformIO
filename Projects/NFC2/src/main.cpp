@@ -8,7 +8,7 @@
 #define RELAY_ON_PIN 7
 #define RELAY_OFF_PIN 8
 
-#define "SECRET" SECRET
+#define SECRET "SECRET"
 
 PN532_SPI pn532spi(SPI, 10); // pin 10 is for the NIC SPI
 NfcAdapter nfc = NfcAdapter(pn532spi);
