@@ -1,7 +1,6 @@
 #include <Wire.h>
 #include <PN532.h>
 #include <PN532_I2C.h>
-#include <NDEF.h>
 #include <NfcAdapter.h>
 
 #define RED_PIN 3
@@ -35,6 +34,7 @@ void loop(void) {
     Serial.println(tag.getTagType());
     Serial.print("UID: ");Serial.println(tag.getUidString());
 
+/*
     if (tag.hasNdefMessage()) {
       NdefMessage message = tag.getNdefMessage();
       Serial.print("\nThis NFC Tag contains an NDEF Message with ");
@@ -97,6 +97,7 @@ void loop(void) {
         }
       }
     }
+  */
   }
   delay(500);
 }
