@@ -2,7 +2,7 @@
 
 #define EPD_CS D6
 
-#include <GxEPD2_BW.h>
+//#include <GxEPD2_BW.h>
 #include <GxEPD2_3C.h>
 #include <Fonts/FreeMonoBold9pt7b.h>
 
