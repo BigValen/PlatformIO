@@ -9,26 +9,18 @@
 #include "BitmapDisplay.h"
 #include "TextDisplay.h"
 
-// select the display constructor line in one of the following files (old style):
-#include "GxEPD2_display_selection.h"
-#include "GxEPD2_display_selection_added.h"
-//#include "GxEPD2_display_selection_more.h" // private
-
-// or select the display class and display driver class in the following file (new style):
 #include "GxEPD2_display_selection_new_style.h"
-
-// GxEPD2_3C<GxEPD2_213c, GxEPD2_213c::HEIGHT> display(GxEPD2_213c(/*CS=D8*/ D6, /*DC=D3*/ D3, /*RST=D4*/ D4, /*BUSY=D2*/ D2)); 
 
 
 BitmapDisplay bitmaps(display);
 
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(76800);
   Serial.println();
   Serial.println("setup");
   delay(100);
-  display.init(115200);
+  display.init(76800);
   // first update should be full refresh
   helloWorld(display);
   delay(1000);

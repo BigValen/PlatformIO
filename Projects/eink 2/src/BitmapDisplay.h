@@ -26,6 +26,17 @@ class BitmapDisplay
     BitmapDisplay(GxEPD2_GFX& _display) : display(_display) {};
     void drawBitmaps();
   private:
+    void drawBitmaps104x212();
+    void drawBitmaps128x250();
+    void drawBitmaps128x296();
+    void drawBitmaps152x296();
+    void drawBitmaps176x264();
+    void drawBitmaps240x416();
+    void drawBitmaps400x300();
+    void drawBitmaps640x384();
+    void drawBitmaps800x480();
+    void drawBitmaps800x600();
+    void drawBitmaps3c200x200();
     void drawBitmaps3c104x212();
 };
 
